@@ -7,28 +7,34 @@
     // 👉 CHALLENGE 1
 
     function profileActivation(profile, reason)  {
-    
-    let profileStatus = {active: true,  reason: reason};
 
-  if (profileStatus.active === true && profileStatus.reason === undefined)
-  
-  console.log(profileStatus)
-  
-  {return {active: false, reason: "Not logged in for 30 days"}
+ if (profile.active === true && reason === undefined) {
 
-   if (true, `reason`)
+ return  "confirm status manually"}
+ 
+ if (profile.active === true) {
+
+  profile.active = false
+
+  profile.reason = reason
    
-     return {active:true,  "confirm status manually"}
+     return profile;}
 
-return profileStatus
-
-  }
+    else if (profile.active === false) {
+   
+     profile.active = true
+     
+     delete profile.reason
+     
+     return profile;}
 
 }
 
 
     // 👉 CHALLENGE 2
     function mineSweeper(grid, x, y) {
+
+
 
     }
 
