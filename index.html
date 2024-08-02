@@ -34,9 +34,22 @@
     // 👉 CHALLENGE 2
     function mineSweeper(grid, x, y) {
 
+  if (x >= 4 || x <= 0 ||  y >= 4 || y <= 0) {
+
+return  "invalid coordinates" } 
+
+if (grid.color === "🟦")
+
+{return  "🟦 🥳"}
+
+else if (grid.color !== "🟦") 
+
+{return "🟥 💀"}
 
 
-    }
+}
+
+
 
     // 👉 CHALLENGE 3
     function booleanize(obj) {
